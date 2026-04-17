@@ -47,11 +47,7 @@ export const metadata: Metadata = {
       "Cybersecurity portfolio featuring AI security, SOC labs, projects, certifications, and technical experience.",
     images: ["/images/office-work.jpeg"],
   },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
-  },
+
 };
 
 export default function RootLayout({
