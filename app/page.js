@@ -895,7 +895,7 @@ export default function LouisCybersecurityPortfolio() {
 
              <div className="inline-flex max-w-full rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-200">
   <span className="sm:whitespace-nowrap">
-    Cybersecurity Analyst | SOC Analyst | IT Support Specialist
+    Cybersecurity Analyst | SOC • SIEM • AI Security • Vulnerability Management
   </span>
 </div>
               </div>
