@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Louis Okperiruisi" }],
   creator: "Louis Okperiruisi",
   publisher: "Louis Okperiruisi",
-  metadataBase: new URL("https://my-portfolio-alpha-seven-35.vercel.app"),
+  metadataBase: new URL("https://louisky.vercel.app"),
   openGraph: {
     title: "Louis Okperiruisi | Cybersecurity Analyst Portfolio",
     description:
