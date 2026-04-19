@@ -1736,7 +1736,7 @@ Technologies used to monitor threats, assess vulnerabilities, secure endpoints, 
         stack: ["EHR Support", "Ticketing", "Windows Support", "Workstation Deployment"],
         points: [
           "Achieved 95% issue resolution and maintained 99.999% system uptime through proactive support and monitoring.",
-          "Reduced response time from 4 hours to 1.5 hours by implementing a more efficient ticketing workflow.",
+          "Reduced response time from 4 hours to 1 hour by implementing a more efficient ticketing workflow.",
           "Deployed 150+ workstations and trained 50+ users monthly on EHR systems and IT processes.",
         ],
       },
