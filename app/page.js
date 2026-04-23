@@ -652,14 +652,22 @@ export default function LouisCybersecurityPortfolio() {
     "ISO/IEC 27001 security credential",
   ];
 
-  const awards = [
-    {
-      name: "Best Administrative Staff of the Month",
-      issuer: "Capitol Hill Hospitals Ltd",
-      year: "2023",
-      href: "/images/certRecognition.jpeg",
-    },
-  ];
+const awards = [
+  {
+    name: "Best Administrative Staff of the Month",
+    issuer: "Capitol Hill Hospitals Ltd",
+    year: "2023",
+    href: "/images/certRecognition.jpeg",
+    image: "/images/certRecognition.jpeg",
+  },
+  {
+    name: "Certificate Of Commendation",
+    issuer: "NYSC",
+    year: "2011",
+    href: "/images/nysc-commendation.jpeg",
+    image: "/images/nysc-commendation.jpeg",
+  },
+];
 
 
   const projectFilters = [
@@ -1923,44 +1931,60 @@ Technologies used to monitor threats, assess vulnerabilities, secure endpoints, 
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-6 lg:px-10" id="awards">
-        <div className="mb-8">
-          <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">
-            Recognition
-          </p>
-          <h2 className="mt-2 text-3xl font-bold text-white">
-            Awards & Recognition
-          </h2>
+<div className="mb-8 text-center">
+  <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">
+    Recognition
+  </p>
+  <h2 className="mt-2 text-3xl font-bold text-white">
+    Awards & Recognition
+  </h2>
+</div>
+
+  <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+    {awards.map((award) => (
+      <motion.a
+  key={award.name}
+  href={award.href}
+  target="_blank"
+  rel="noreferrer"
+  whileHover={{ y: -6, scale: 1.01 }}
+  transition={{ duration: 0.25 }}
+  className="group rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/90 to-slate-800/60 p-5 shadow-xl shadow-black/20"
+>
+  <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <div className="flex items-center gap-4 min-w-0">
+      <div className="h-16 w-16 shrink-0 overflow-hidden rounded-2xl border border-cyan-400/20 bg-white/5">
+        <img
+          src={award.image}
+          alt={award.name}
+          className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+
+      <div className="min-w-0">
+        <h3 className="truncate text-lg font-semibold text-white group-hover:text-cyan-200">
+          {award.name}
+        </h3>
+        <p className="mt-1 text-sm text-slate-400">{award.issuer}</p>
+
+        <div className="mt-3 inline-flex items-center gap-2 rounded-full border border-white/10 px-3 py-1 text-sm text-slate-300 group-hover:border-cyan-300/30 group-hover:text-cyan-100">
+          View item <BadgeCheck size={14} />
         </div>
+      </div>
+    </div>
 
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {awards.map((award) => (
-            <a
-              key={award.name}
-              href={award.href}
-              target="_blank"
-              rel="noreferrer"
-              className="group rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-white/10"
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <h3 className="text-lg font-semibold text-white group-hover:text-cyan-200">
-                    {award.name}
-                  </h3>
-                  <p className="mt-1 text-sm text-slate-400">{award.issuer}</p>
-                </div>
-                <span className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-200">
-                  {award.year}
-                </span>
-              </div>
-
-              <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-white/10 px-3 py-1 text-sm text-slate-300 group-hover:border-cyan-300/30 group-hover:text-cyan-100">
-                View item <BadgeCheck size={14} />
-              </div>
-            </a>
-          ))}
-        </div>
-      </section>
-
+    <div className="sm:text-right">
+      <span className="inline-flex rounded-full bg-cyan-400/10 px-4 py-1.5 text-xs font-medium text-cyan-200">
+        {award.year}
+      </span>
+    </div>
+  </div>
+</motion.a>
+    ))}
+  </div>
+</section>
 
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-10" id="contact">
         <div className="rounded-[2rem] border border-cyan-400/20 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 p-8 shadow-2xl shadow-cyan-900/10">
