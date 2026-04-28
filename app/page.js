@@ -242,25 +242,41 @@ export default function LouisCybersecurityPortfolio() {
 
   const projects = [
     {
-      title: "AI Security Middleware",
-      category: "Security",
-      summary:
-        "Built a FastAPI-based AI security middleware that detects prompt injection, enforces rate limits, masks PII, and logs suspicious activity in real time.",
-      metrics: [
-        "Blocked malicious prompt injection input",
-        "Enforced request rate limits",
-        "Masked sensitive data in responses",
-      ],
-      tags: ["AI Security", "FastAPI", "Prompt Injection", "PII Masking"],
-      images: [
-        {
-          src: "/images/ai-security-project.jpeg",
-          alt: "AI security middleware testing interface and FastAPI security workflow",
-          title: "AI Security Middleware",
-        },
-      ],
-      featured: true,
+  title: "AI Security Middleware",
+  category: "Security",
+  summary:
+    "Built a FastAPI-based security middleware that detects prompt injection, enforces rate limits, masks PII, analyzes phishing emails (SPF, DKIM, DMARC), and enriches suspicious URLs using VirusTotal threat intelligence for real-time automated response.",
+  
+  metrics: [
+    "Blocked malicious prompt injection attempts",
+    "Detected and blocked phishing emails",
+    "Enforced request rate limits",
+    "Masked sensitive data (PII) in responses",
+    "Identified high-risk behavior using threat scoring",
+    "Enriched suspicious URLs with VirusTotal intelligence"
+  ],
+
+  tags: [
+    "AI Security",
+    "FastAPI",
+    "Phishing Detection",
+    "VirusTotal API",
+    "Threat Intelligence",
+    "Prompt Injection",
+    "PII Masking",
+    "SOC Simulation"
+  ],
+
+  images: [
+    {
+      src: "/images/ai-security-project.jpeg",
+      alt: "AI security middleware with phishing detection, threat intelligence, and SOC-style workflow",
+      title: "AI Security Middleware with Phishing Defense",
     },
+  ],
+
+  featured: true,
+}
     {
       title: "Network Rack Optimization",
       category: "Infrastructure",
