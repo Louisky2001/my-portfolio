@@ -241,21 +241,19 @@ export default function LouisCybersecurityPortfolio() {
   ];
 
   const projects = [
-    {
+  {
   title: "AI Security Middleware (SOC Simulation)",
   category: "Security",
   summary:
-    "Built a FastAPI-based security middleware that detects prompt injection, enforces rate limits, masks PII, analyzes phishing emails (SPF, DKIM, DMARC), and enriches suspicious URLs using VirusTotal threat intelligence for real-time automated response.",
-  
+    "Built a FastAPI-based security middleware that detects prompt injection, enforces rate limits, masks PII, analyzes phishing emails using SPF, DKIM, and DMARC, and enriches suspicious URLs with VirusTotal threat intelligence for real-time automated response.",
   metrics: [
-    "Blocked malicious prompt injection attempts",
-    "Detected and blocked phishing emails",
-    "Enforced request rate limits",
-    "Masked sensitive data (PII) in responses",
-    "Identified high-risk behavior using threat scoring",
-    "Enriched suspicious URLs with VirusTotal intelligence"
+    "Blocked prompt injection attempts",
+    "Detected phishing emails",
+    "Enriched URLs with VirusTotal",
+    "Masked sensitive PII",
+    "Scored behavioral threats",
+    "Automated 403 blocking",
   ],
-
   tags: [
     "AI Security",
     "FastAPI",
@@ -264,9 +262,8 @@ export default function LouisCybersecurityPortfolio() {
     "Threat Intelligence",
     "Prompt Injection",
     "PII Masking",
-    "SOC Simulation"
+    "SOC Simulation",
   ],
-
   images: [
     {
       src: "/images/ai-security-project.jpeg",
@@ -274,9 +271,8 @@ export default function LouisCybersecurityPortfolio() {
       title: "AI Security Middleware with Phishing Defense",
     },
   ],
-
   featured: true,
-}
+},
     {
       title: "Network Rack Optimization",
       category: "Infrastructure",
@@ -1474,77 +1470,90 @@ Technologies used to monitor threats, assess vulnerabilities, secure endpoints, 
         </div>
 
         <div className="mt-10 grid gap-8 lg:grid-cols-2">
-          {filteredProjects.map((project, index) => (
+         {filteredProjects.map((project, index) => (
+  <motion.article
+    key={project.title}
+    initial={{ opacity: 0, y: 28 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.25 }}
+    transition={{ duration: 0.6, delay: index * 0.05 }}
+    whileHover={{ y: -8, scale: 1.01 }}
+    className="group relative overflow-hidden rounded-[2rem] border border-cyan-400/20 bg-slate-950/80 p-6 shadow-2xl shadow-cyan-950/20"
+  >
+    <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 via-blue-500/5 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
+
+    <div className="relative z-10">
+      <div className="grid grid-cols-2 gap-3">
+        {project.images.slice(0, 4).map((image, imageIndex) => (
+          <button
+            key={image.src}
+            onClick={() => openProjectModal(project, imageIndex)}
+            className={`overflow-hidden rounded-2xl border border-white/10 text-left ${
+              project.images.length === 1 ? "col-span-2" : ""
+            }`}
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.01] hover:scale-[1.03]"
+              loading="lazy"
+              decoding="async"
+            />
+          </button>
+        ))}
+      </div>
+
+      <div className="mt-6">
+        <div className="text-sm uppercase tracking-[0.16em] text-cyan-300">
+          {project.category}
+        </div>
+
+        <h3 className="mt-2 text-2xl font-semibold text-white transition group-hover:text-cyan-200">
+          {project.title}
+        </h3>
+
+        <p className="mt-4 leading-7 text-slate-300">
+          {project.summary}
+        </p>
+
+        <div className="mt-5 grid gap-3 sm:grid-cols-3">
+          {project.metrics.map((metric, metricIndex) => (
             <motion.div
-              key={project.title}
-              initial={{ opacity: 0, y: 20 }}
+              key={metric}
+              initial={{ opacity: 0, y: 14 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="group rounded-3xl border border-white/10 bg-white/5 p-6"
+              transition={{ delay: metricIndex * 0.06 }}
+              className="rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-3 text-sm text-cyan-100 transition group-hover:border-cyan-300/40 group-hover:bg-cyan-400/15"
             >
-              <div className="grid grid-cols-2 gap-3">
-                {project.images.slice(0, 4).map((image, imageIndex) => (
-                  <button
-                    key={image.src}
-                    onClick={() => openProjectModal(project, imageIndex)}
-                    className={`overflow-hidden rounded-2xl border border-white/10 text-left ${
-                      project.images.length === 1 ? "col-span-2" : ""
-                    }`}
-                  >
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      className="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.01] hover:scale-[1.03]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </button>
-                ))}
-              </div>
-
-              <div className="mt-6">
-                <div className="text-sm uppercase tracking-[0.16em] text-cyan-300">
-                  {project.category}
-                </div>
-                <h3 className="mt-2 text-2xl font-semibold text-white">
-                  {project.title}
-                </h3>
-                <p className="mt-4 text-slate-300">{project.summary}</p>
-
-                <div className="mt-5 grid gap-3 sm:grid-cols-3">
-                  {project.metrics.map((metric) => (
-                    <div
-                      key={metric}
-                      className="rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-3 text-sm text-cyan-100"
-                    >
-                      {metric}
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full border border-white/10 bg-slate-900/70 px-4 py-2 text-sm text-slate-200"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="mt-6">
-                  <button
-                    onClick={() => openProjectModal(project, 0)}
-                    className="rounded-2xl border border-white/10 px-4 py-3 text-sm font-medium text-white transition hover:bg-white/10 hover:-translate-y-0.5"
-                  >
-                    Open Gallery
-                  </button>
-                </div>
-              </div>
+              {metric}
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-5 flex flex-wrap gap-2">
+          {project.tags.map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full border border-white/10 bg-slate-900/70 px-4 py-2 text-sm text-slate-200 transition hover:border-cyan-400/40 hover:text-cyan-200"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <div className="mt-6">
+          <button
+            onClick={() => openProjectModal(project, 0)}
+            className="rounded-2xl border border-white/10 px-4 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-white/10"
+          >
+            Open Gallery
+          </button>
+        </div>
+      </div>
+    </div>
+  </motion.article>
+))}
         </div>
       </section>
 
