@@ -913,9 +913,9 @@ const awards = [
               </h1>
 
               <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-300">
-              I secure systems, improve infrastructure, support enterprise users, 
-              and deliver practical technical outcomes across cybersecurity, operations, 
-              field environments, and AI-enabled security systems.
+              I build security systems that detect, analyze, and respond to real-world attack scenarios.
+
+From securing infrastructure to supporting enterprise environments, I focus on practical cybersecurity, operations, and AI-driven defense solutions.
               </p>
 
               <div className="mt-5 max-w-3xl rounded-2xl border border-white/10 bg-white/5 p-4">
@@ -1249,7 +1249,7 @@ Technologies used to monitor threats, assess vulnerabilities, secure endpoints, 
               <div>
                 <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-200">
                   <Sparkles size={16} />
-                  Featured Project
+                  Featured Security Engineering Work
                 </div>
                 <h2 className="mt-4 text-3xl font-bold text-white">
                   {featuredProject.title}
