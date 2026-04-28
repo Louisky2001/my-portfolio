@@ -1244,72 +1244,94 @@ Technologies used to monitor threats, assess vulnerabilities, secure endpoints, 
 
       {featuredProject && (
         <section className="mx-auto max-w-7xl px-6 py-6 lg:px-10">
-          <div className="rounded-[2rem] border border-cyan-400/20 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 p-8 shadow-2xl shadow-cyan-900/10">
-            <div className="flex flex-col gap-8 lg:grid lg:grid-cols-[1fr_1fr] lg:items-center">
-              <div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-200">
-                  <Sparkles size={16} />
-                  Featured Security Engineering Work
-                </div>
-                <h2 className="mt-4 text-3xl font-bold text-white">
-                  {featuredProject.title}
-                </h2>
-                <p className="mt-4 max-w-2xl leading-8 text-slate-300">
-                  {featuredProject.summary}
-                </p>
+  <div className="rounded-[2rem] border border-cyan-400/20 bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-slate-950 p-8 shadow-2xl shadow-cyan-900/10">
+    <div className="flex flex-col gap-8 lg:grid lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <div>
+        <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-200">
+          <Sparkles size={16} />
+          Featured Security Engineering Work
+        </div>
 
-                <div className="mt-6 grid gap-3 sm:grid-cols-3">
-                  {featuredProject.metrics.map((metric) => (
-                    <div
-                      key={metric}
-                      className="rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-3 text-sm text-cyan-100"
-                    >
-                      {metric}
-                    </div>
-                  ))}
-                </div>
+        <h2 className="mt-4 text-3xl font-bold text-white lg:text-4xl">
+          AI Security Middleware with Phishing Defense
+        </h2>
 
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {featuredProject.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full border border-white/10 bg-slate-900/70 px-4 py-2 text-sm text-slate-200"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+        <p className="mt-4 max-w-2xl leading-8 text-slate-300">
+          Built a FastAPI-based security middleware that detects prompt
+          injection, masks PII, enforces rate limits, analyzes phishing emails,
+          enriches suspicious URLs with VirusTotal threat intelligence, and
+          blocks high-risk activity in real time.
+        </p>
 
-                <div className="mt-6 flex flex-wrap gap-3">
-                  <a
-                    href="/labs/Building-Security-AI-Systems.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="rounded-2xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:-translate-y-0.5"
-                  >
-                    View Full Project
-                  </a>
-                  <a
-                    href="#labs"
-                    className="rounded-2xl border border-white/10 px-5 py-3 font-semibold text-white transition hover:bg-white/5"
-                  >
-                    Explore Labs
-                  </a>
-                </div>
-              </div>
-
-              <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-slate-900/60">
-                <img
-                  src="/images/ai-security-project.jpeg"
-                  alt="AI security middleware project visual"
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
+        <div className="mt-6 grid gap-3 sm:grid-cols-3">
+          {[
+            "Blocked prompt injection attempts",
+            "Detected phishing emails using SPF, DKIM & DMARC",
+            "Enriched suspicious URLs with VirusTotal",
+            "Masked PII across frontend and backend",
+            "Scored behavioral threats in real time",
+            "Blocked high-risk requests with HTTP 403",
+          ].map((metric) => (
+            <div
+              key={metric}
+              className="rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-3 text-sm text-cyan-100"
+            >
+              {metric}
             </div>
-          </div>
-        </section>
+          ))}
+        </div>
+
+        <div className="mt-6 flex flex-wrap gap-2">
+          {[
+            "AI Security",
+            "FastAPI",
+            "Phishing Detection",
+            "VirusTotal API",
+            "PII Masking",
+            "Prompt Injection",
+            "SOC Simulation",
+            "Threat Intelligence",
+          ].map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full border border-white/10 bg-slate-900/70 px-4 py-2 text-sm text-slate-200"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a
+            href="https://github.com/Louisky2001/Ai-Security-System"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-2xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300"
+          >
+            View GitHub Project
+          </a>
+
+          <a
+            href="#labs"
+            className="rounded-2xl border border-white/10 px-5 py-3 font-semibold text-white transition hover:bg-white/5"
+          >
+            Explore Security Labs
+          </a>
+        </div>
+      </div>
+
+      <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-slate-900/60">
+        <img
+          src="/images/ai-security-project.jpeg"
+          alt="AI security middleware with phishing detection and threat intelligence dashboard"
+          className="h-full w-full object-cover"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    </div>
+  </div>
+</section>
       )}
 
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-10" id="projects">
