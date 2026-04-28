@@ -1485,7 +1485,7 @@ Technologies used to monitor threats, assess vulnerabilities, secure endpoints, 
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.25 }}
     transition={{ duration: 0.6, delay: index * 0.05 }}
-    whileHover={{ y: -8, scale: 1.01 }}
+    whileHover={{ y: -14, scale: 1.03 }}
     className="group relative overflow-hidden rounded-[2rem] border border-cyan-400/20 bg-slate-950/80 p-6 shadow-2xl shadow-cyan-950/20"
   >
     <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 via-blue-500/5 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
@@ -1566,63 +1566,132 @@ Technologies used to monitor threats, assess vulnerabilities, secure endpoints, 
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-10">
-        <div className="rounded-[2rem] border border-cyan-400/20 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 p-8 shadow-2xl shadow-cyan-900/10">
-          <div className="mb-6">
-            <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">
-              Featured Case Study
-            </p>
-            <h2 className="mt-2 text-3xl font-bold text-white">
-              {featuredCaseStudy.title}
-            </h2>
-            <p className="mt-3 text-slate-300">{featuredCaseStudy.subtitle}</p>
-          </div>
+  <motion.div
+    initial={{ opacity: 0, y: 28 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.25 }}
+    transition={{ duration: 0.7, ease: "easeOut" }}
+    className="relative overflow-hidden rounded-[2rem] border border-cyan-400/20 bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-slate-950 p-8 shadow-2xl shadow-cyan-900/10"
+  >
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.16),transparent_35%)]" />
 
-          <div className="grid gap-6 lg:grid-cols-3">
-            <div className="rounded-3xl border border-white/10 bg-slate-950/40 p-6">
-              <h3 className="text-lg font-semibold text-white">Challenge</h3>
-              <p className="mt-3 text-slate-300 leading-7">
-                {featuredCaseStudy.challenge}
-              </p>
-            </div>
+    <div className="relative z-10">
+      <div className="mb-8">
+        <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">
+          Featured Case Study
+        </p>
 
-            <div className="rounded-3xl border border-white/10 bg-slate-950/40 p-6">
-              <h3 className="text-lg font-semibold text-white">Action</h3>
-              <p className="mt-3 text-slate-300 leading-7">
-                {featuredCaseStudy.action}
-              </p>
-            </div>
+        <h2 className="mt-2 text-3xl font-bold text-white lg:text-4xl">
+          AI Security Middleware with Phishing Detection & Automated Response
+        </h2>
 
-            <div className="rounded-3xl border border-white/10 bg-slate-950/40 p-6">
-              <h3 className="text-lg font-semibold text-white">Result</h3>
-              <p className="mt-3 text-slate-300 leading-7">
-                {featuredCaseStudy.result}
-              </p>
-            </div>
-          </div>
+        <p className="mt-4 max-w-4xl leading-8 text-slate-300">
+          A SOC-style security system designed to detect prompt injection,
+          protect sensitive data, analyze phishing emails, enrich suspicious
+          URLs with VirusTotal threat intelligence, score behavioral risk, and
+          automatically block high-risk activity in real time.
+        </p>
+      </div>
 
-          <div className="mt-6 flex flex-wrap gap-2">
-            {featuredCaseStudy.tools.map((tool) => (
-              <span
-                key={tool}
-                className="rounded-full border border-white/10 bg-slate-900/70 px-4 py-2 text-sm text-slate-200"
-              >
-                {tool}
-              </span>
-            ))}
-          </div>
+      <div className="grid gap-6 lg:grid-cols-3">
+        {[
+          {
+            title: "Challenge",
+            body:
+              "Modern applications face multiple attack paths including prompt injection, phishing emails, credential harvesting, brute-force behavior, insider activity, and accidental PII exposure. The goal was to build a practical security layer that could detect and respond to these threats before they reach core application logic.",
+          },
+          {
+            title: "Action",
+            body:
+              "Built a FastAPI-based middleware with layered controls: authentication, rate limiting, frontend and backend PII masking, prompt injection detection, behavioral threat scoring, phishing header analysis, phishing content inspection, and VirusTotal URL reputation enrichment.",
+          },
+          {
+            title: "Result",
+            body:
+              "Produced a working SOC-style prototype that blocks malicious requests, masks sensitive data, detects phishing indicators, enriches URLs with threat intelligence, scores user behavior, logs events safely, and returns structured risk analysis for investigation.",
+          },
+        ].map((item, index) => (
+          <motion.div
+            key={item.title}
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.08 }}
+            whileHover={{ y: -6 }}
+            className="rounded-3xl border border-white/10 bg-slate-950/50 p-6 transition hover:border-cyan-400/30 hover:bg-slate-900/70"
+          >
+            <h3 className="text-lg font-semibold text-white">{item.title}</h3>
+            <p className="mt-3 leading-7 text-slate-300">{item.body}</p>
+          </motion.div>
+        ))}
+      </div>
 
-          <div className="mt-8">
-            <a
-              href={featuredCaseStudy.href}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-2xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:-translate-y-0.5"
-            >
-              View Full Case Study <ExternalLink size={16} />
-            </a>
-          </div>
-        </div>
-      </section>
+      <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        {[
+          "SPF, DKIM & DMARC validation",
+          "From vs Return-Path spoofing checks",
+          "VirusTotal URL threat intelligence",
+          "Prompt injection detection",
+          "Frontend + backend PII masking",
+          "Behavioral threat scoring",
+          "Rate limiting and auth checks",
+          "Automated HTTP 403 blocking",
+        ].map((item, index) => (
+          <motion.div
+            key={item}
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.04 }}
+            className="rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-3 text-sm font-medium text-cyan-100"
+          >
+            {item}
+          </motion.div>
+        ))}
+      </div>
+
+      <div className="mt-8 flex flex-wrap gap-2">
+        {[
+          "FastAPI",
+          "Python",
+          "Phishing Detection",
+          "VirusTotal API",
+          "Threat Intelligence",
+          "Prompt Injection Defense",
+          "PII Masking",
+          "Behavioral Analytics",
+          "SOC Simulation",
+          "Automated Response",
+        ].map((tool) => (
+          <span
+            key={tool}
+            className="rounded-full border border-white/10 bg-slate-900/70 px-4 py-2 text-sm text-slate-200 transition hover:border-cyan-400/40 hover:text-cyan-200"
+          >
+            {tool}
+          </span>
+        ))}
+      </div>
+
+      <div className="mt-8 flex flex-wrap gap-3">
+        <a
+          href="https://github.com/Louisky2001/Ai-Security-System"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 rounded-2xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300 hover:shadow-lg hover:shadow-cyan-500/20"
+        >
+          View GitHub Project <ExternalLink size={16} />
+        </a>
+
+        <a
+          href="#labs"
+          className="inline-flex items-center gap-2 rounded-2xl border border-white/10 px-5 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/5"
+        >
+          Explore Related Labs
+        </a>
+      </div>
+    </div>
+  </motion.div>
+</section>
 
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-10" id="labs">
         <div className="mb-10">
