@@ -455,18 +455,26 @@ export default function LouisCybersecurityPortfolio() {
 
   const labs = [
     {
-      title: "AI Security Middleware (Prompt Injection Defense)",
-      category: "AI Security",
-      summary:
-        "Built an AI security middleware that detects prompt injection, enforces rate limits, masks PII, and logs suspicious activity in real time using FastAPI and Python.",
-      outcomes: [
-        "Blocked malicious prompt injection requests",
-        "Enforced API rate limiting",
-        "Masked email and phone PII",
-      ],
-      tools: ["FastAPI", "Python", "JWT", "AI Security"],
-      href: "/labs/Building-Security-AI-Systems.pdf",
-    },
+  title: "AI Security Middleware (SOC Simulation: Detection & Response)",
+  category: "AI Security",
+  summary:
+    "Built a FastAPI-based AI security middleware that detects prompt injection, enforces rate limits, masks PII, analyzes phishing emails using SPF, DKIM, and DMARC, enriches suspicious URLs with VirusTotal threat intelligence, and automatically blocks high-risk activity in real time.",
+  outcomes: [
+    "Blocked prompt injection and malicious input requests",
+    "Detected phishing emails using header + content analysis",
+    "Enriched suspicious URLs with VirusTotal intelligence",
+  ],
+  tools: [
+    "FastAPI",
+    "Python",
+    "Phishing Detection",
+    "VirusTotal API",
+    "Threat Intelligence",
+    "PII Masking",
+    "SOC Simulation",
+  ],
+  href: "https://github.com/Louisky2001/Ai-Security-System",
+   },
     {
       title: "OPSWAT MetaDefender Endpoint Security Lab",
       category: "Endpoint Security",
@@ -1788,7 +1796,7 @@ Technologies used to monitor threats, assess vulnerabilities, secure endpoints, 
 
               <div className="mt-6 flex items-center justify-between">
                 <span className="inline-flex items-center gap-2 rounded-full bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 transition group-hover:translate-x-0.5">
-                  View Lab File <ExternalLink size={14} />
+                  View Security Project <ExternalLink size={14} />
                 </span>
                 <span className="text-xs text-slate-500">Case Study</span>
               </div>
