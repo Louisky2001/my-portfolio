@@ -1071,7 +1071,7 @@ From securing infrastructure to supporting enterprise environments, I focus on p
         </div>
       </section>
 
-      <section id="what-i-do" className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
+      <section className="mx-auto max-w-7xl px-6 pt-20 pb-8 lg:px-10">
   <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-start">
 
     {/* LEFT SIDE — WHAT I DO */}
@@ -1143,7 +1143,7 @@ In addition, I support enterprise environments, optimize infrastructure, and ens
   </div>
 </section>
 
-      <section id="impact" className="mx-auto max-w-7xl px-6 py-14 lg:px-10">
+      <section className="mx-auto max-w-7xl px-6 pt-6 pb-20 lg:px-10">
         <div className="mb-10">
           <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">
             Operational Impact
