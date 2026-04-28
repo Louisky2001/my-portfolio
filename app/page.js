@@ -1085,7 +1085,13 @@ From securing infrastructure to supporting enterprise environments, I focus on p
       </h2>
 
         <p className="mt-5 max-w-2xl text-slate-400 leading-7 text-left md:text-justify">
-       I deliver cybersecurity, infrastructure, and IT operational support across enterprise and field environments. My work focuses on securing systems, improving visibility, and maintaining operational continuity through practical execution and real-world problem-solving. I have deployed SIEM solutions, conducted vulnerability assessments, strengthened endpoint security, and implemented infrastructure improvements, including rack standardization, network device upgrades, access point and radio deployments, installation, configuration, and connectivity restoration. I also build AI-driven security solutions, including middleware that detects prompt injection, enforces rate limits, and protects sensitive data in real time.
+       I design and build security systems that detect, analyze, and respond to real-world cyber threats.
+
+My work focuses on security operations, detection engineering, and practical system implementation—where I develop solutions for phishing detection, behavioral threat analysis, API security, and AI-driven security systems.
+
+I combine SOC-level investigation thinking with hands-on execution to identify risks early, automate response, and strengthen system resilience.
+
+In addition, I support enterprise environments, optimize infrastructure, and ensure systems remain secure, stable, and operational.
       </p>
     </div>
 
@@ -1143,7 +1149,7 @@ From securing infrastructure to supporting enterprise environments, I focus on p
             Operational Impact
           </p>
           <h2 className="mt-2 text-3xl font-bold text-white">
-            Measurable Results
+            Measurable Security Impact
           </h2>
 
     <p className="mt-3 max-w-3xl text-slate-400">
@@ -1191,7 +1197,9 @@ From securing infrastructure to supporting enterprise environments, I focus on p
               Professional Summary
             </h2>
            <p className="mt-4 leading-8 text-slate-300 text-left md:text-justify">
-  Cybersecurity Analyst specializing in SOC operations, vulnerability assessment, endpoint security, and infrastructure support across enterprise and field environments. I have deployed SIEM solutions, conducted vulnerability assessments, and implemented endpoint security controls to improve visibility and reduce operational risk. Beyond traditional security operations, I build AI-driven security systems, including a FastAPI-based middleware that detects prompt injection, enforces rate limits, masks sensitive data, and logs suspicious activity in real time. I focus on delivering practical, measurable security outcomes by combining security operations, infrastructure understanding, and real-world execution.
+     Cybersecurity Analyst with experience in security operations, infrastructure support, and enterprise systems. I build and implement security solutions that detect threats, protect sensitive data, and automate response across modern applications.
+
+My focus includes phishing detection, behavioral threat analysis, API security, and AI-driven security systems, combining practical operations experience with a strong detection engineering mindset.
 </p>
           </div>
 
