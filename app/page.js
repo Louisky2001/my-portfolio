@@ -1161,7 +1161,19 @@ In addition, I support enterprise environments, optimize infrastructure, and ens
           </h2>
 
     <p className="mt-3 max-w-3xl text-slate-400">
-  Measurable outcomes delivered across cybersecurity, infrastructure, endpoint security, and AI security projects.
+  This system demonstrates how layered security controls can significantly reduce risk exposure across modern applications.
+
+By combining phishing detection, behavioral analysis, prompt injection defense, and threat intelligence integration, the platform is able to identify and block high-risk activity before it impacts core systems.
+
+The implementation of multi-layer email analysis (SPF, DKIM, DMARC, and URL inspection) improves the detection of phishing attempts and reduces the likelihood of credential compromise.
+
+Behavioral threat scoring enhances visibility into suspicious user activity, enabling early detection of anomalies such as brute-force attempts, unusual access patterns, and high-risk actions.
+
+End-to-end PII masking ensures that sensitive data is never exposed during processing, logging, or response handling, strengthening data protection and compliance posture.
+
+Integration with external threat intelligence (VirusTotal) increases detection accuracy by validating URLs against real-world threat data, allowing faster and more reliable decision-making.
+
+Overall, the system improves security posture by shifting from passive monitoring to proactive detection and automated response.
     </p>
   </div>
 
