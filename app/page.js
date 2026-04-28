@@ -242,7 +242,7 @@ export default function LouisCybersecurityPortfolio() {
 
   const projects = [
     {
-  title: "AI Security Middleware",
+  title: "AI Security Middleware (SOC Simulation)",
   category: "Security",
   summary:
     "Built a FastAPI-based security middleware that detects prompt injection, enforces rate limits, masks PII, analyzes phishing emails (SPF, DKIM, DMARC), and enriches suspicious URLs using VirusTotal threat intelligence for real-time automated response.",
