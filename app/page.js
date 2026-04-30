@@ -1151,7 +1151,10 @@ In addition, I support enterprise environments, optimize infrastructure, and ens
   </div>
 </section>
 
-      <section className="mx-auto max-w-7xl px-6 pt-6 pb-20 lg:px-10">
+      <section
+  id="impact"
+  className="mx-auto max-w-7xl scroll-mt-24 px-6 pt-6 pb-20 lg:px-10"
+>
         <div className="mb-10">
           <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">
             Operational Impact
@@ -1160,21 +1163,21 @@ In addition, I support enterprise environments, optimize infrastructure, and ens
             Measurable Security Impact
           </h2>
 
-    <p className="mt-3 max-w-3xl text-slate-400">
-  This system demonstrates how layered security controls can significantly reduce risk exposure across modern applications.
+    <p className="text-slate-300 leading-7 text-justify"> 
+This system demonstrates how layered security controls reduce risk exposure across modern applications by combining detection, validation, and automated response.
 
-By combining phishing detection, behavioral analysis, prompt injection defense, and threat intelligence integration, the platform is able to identify and block high-risk activity before it impacts core systems.
+By integrating phishing detection, behavioral analysis, prompt injection defense, and threat intelligence enrichment, the platform identifies and blocks high-risk activity before it reaches core application logic.
 
-The implementation of multi-layer email analysis (SPF, DKIM, DMARC, and URL inspection) improves the detection of phishing attempts and reduces the likelihood of credential compromise.
+Multi-layer email analysis using SPF, DKIM, DMARC, and URL inspection improves phishing detection accuracy and reduces the likelihood of credential compromise.
 
-Behavioral threat scoring enhances visibility into suspicious user activity, enabling early detection of anomalies such as brute-force attempts, unusual access patterns, and high-risk actions.
+Behavioral threat scoring provides visibility into suspicious user activity, enabling early detection of anomalies such as brute-force attempts, unusual access patterns, and privilege misuse.
 
-End-to-end PII masking ensures that sensitive data is never exposed during processing, logging, or response handling, strengthening data protection and compliance posture.
+End-to-end PII masking ensures sensitive data is protected during processing, logging, and response handling, strengthening data protection and supporting compliance requirements.
 
-Integration with external threat intelligence (VirusTotal) increases detection accuracy by validating URLs against real-world threat data, allowing faster and more reliable decision-making.
+Integration with external threat intelligence (VirusTotal) enhances detection confidence by validating indicators against real-world threat data, enabling faster and more informed decision-making.
 
-Overall, the system improves security posture by shifting from passive monitoring to proactive detection and automated response.
-    </p>
+Overall, the system shifts security operations from passive monitoring to proactive detection and automated response, improving resilience and reducing attack impact.
+   </p>
   </div>
 
   <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
