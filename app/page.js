@@ -1093,13 +1093,19 @@ From securing infrastructure to supporting enterprise environments, I focus on p
       </h2>
 
         <p className="mt-5 max-w-2xl text-slate-400 leading-7 text-left md:text-justify">
-       I design and build security systems that detect, analyze, and respond to real-world cyber threats.
+       I design and build intelligent security systems that detect, analyze, and respond to real-world cyber threats in real time. My work focuses on security operations, detection engineering, and practical system implementation, where I develop layered solutions for:
 
-My work focuses on security operations, detection engineering, and practical system implementation—where I develop solutions for phishing detection, behavioral threat analysis, API security, and AI-driven security systems.
+Phishing detection and email threat analysis
+Behavioral threat detection (UEBA-style user monitoring)
+Malware behavior detection (EDR-style system monitoring)
+API security, prompt injection defense, and PII protection
+AI-driven security and automated response systems
 
-I combine SOC-level investigation thinking with hands-on execution to identify risks early, automate response, and strengthen system resilience.
+I implement a defense-in-depth approach, combining user behavior analytics with system-level monitoring to identify threats such as credential dumping, privilege escalation, ransomware activity, and unknown (zero-day–style) anomalies.
 
-In addition, I support enterprise environments, optimize infrastructure, and ensure systems remain secure, stable, and operational.
+By applying SOC-level investigation thinking with hands-on engineering, I build systems that not only detect threats but also automatically respond—blocking high-risk activity, generating structured logs, and enabling rapid incident response.
+
+In addition, I support enterprise environments by optimizing infrastructure, improving system reliability, and ensuring platforms remain secure, stable, and resilient under real-world conditions.
       </p>
     </div>
 
