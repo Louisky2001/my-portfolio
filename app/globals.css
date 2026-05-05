@@ -250,3 +250,56 @@ p {
     scroll-behavior: auto !important;
   }
 }
+/* ============================= */
+/* WHAT I DO SECTION (FINAL) */
+/* ============================= */
+
+#what-i-do {
+  display: flex;
+  justify-content: center;
+}
+
+.what-i-do-section {
+  max-width: 720px;
+  padding: 48px 24px;
+}
+
+.section-label {
+  color: #22d3ee; /* matches your cyan theme */
+  letter-spacing: 0.25em;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: var(--foreground);
+}
+
+.section-text {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* 🔥 THIS FIXES YOUR BULLETS */
+.what-i-do-list {
+  list-style-type: disc;
+  padding-left: 28px;
+  margin-bottom: 22px;
+}
+
+.what-i-do-list li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  color: var(--foreground);
+}
+
+/* Premium bullet styling */
+.what-i-do-list li::marker {
+  color: #22d3ee;
+  font-size: 1.1em;
+}
