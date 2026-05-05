@@ -1083,36 +1083,38 @@ From securing infrastructure to supporting enterprise environments, I focus on p
   <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-start">
 
     {/* LEFT SIDE — WHAT I DO */}
-    <div>
-      <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">
-        What I Do
-      </p>
+document.getElementById("what-i-do").innerHTML = `
+<div class="what-i-do-section">
 
-      <h2 className="mt-2 text-3xl font-bold text-white">
-        Security, Infrastructure, and Operational Support
-      </h2>
+  <h4 class="section-label">WHAT I DO</h4>
 
-        <p className="mt-5 max-w-2xl text-slate-400 leading-7 text-left md:text-justify">
-       I design and build intelligent security systems that detect, analyze, and respond to real-world cyber threats in real time. 
-My work focuses on security operations, detection engineering, and practical system implementation, combining both user behavior analytics (UEBA) 
-and system-level monitoring (EDR) to deliver proactive and automated security solutions.
-</p>
+  <h2 class="section-title">
+    Security, Infrastructure, and Operational Support
+  </h2>
 
-<ul>
-  <li>Phishing detection and email threat analysis</li>
-  <li>Behavioral threat detection (UEBA-style user monitoring)</li>
-  <li>Malware behavior detection (EDR-style system monitoring)</li>
-  <li>Detection of credential dumping, privilege escalation, and ransomware activity</li>
-  <li>Anomaly-based detection for unknown (zero-day–style) threats</li>
-  <li>API security, prompt injection defense, and PII protection</li>
-  <li>AI-driven security systems with automated response (block, log, alert)</li>
-</ul>
+  <p class="section-text">
+    I design and build intelligent security systems that detect, analyze, and respond to real-world cyber threats in real time. 
+    My work focuses on security operations, detection engineering, and practical system implementation, combining both user behavior analytics (UEBA) 
+    and system-level monitoring (EDR) to deliver proactive and automated security solutions.
+  </p>
 
-<p>
-I apply SOC-level investigation thinking with hands-on engineering to identify risks early, automate response, and strengthen system resilience. 
-In addition, I support enterprise environments by optimizing infrastructure and ensuring systems remain secure, stable, and operational.
-      </p>
-    </div>
+  <ul class="what-i-do-list">
+    <li>Phishing detection and email threat analysis</li>
+    <li>Behavioral threat detection (UEBA-style user monitoring)</li>
+    <li>Malware behavior detection (EDR-style system monitoring)</li>
+    <li>Detection of credential dumping, privilege escalation, and ransomware activity</li>
+    <li>Anomaly-based detection for unknown (zero-day–style) threats</li>
+    <li>API security, prompt injection defense, and PII protection</li>
+    <li>AI-driven security systems with automated response (block, log, alert)</li>
+  </ul>
+
+  <p class="section-text">
+    I apply SOC-level investigation thinking with hands-on engineering to identify risks early, automate response, and strengthen system resilience. 
+    In addition, I support enterprise environments by optimizing infrastructure and ensuring systems remain secure, stable, and operational.
+  </p>
+
+</div>
+`;
 
     {/* RIGHT SIDE — SECURITY TOOL SNAPSHOT */}
     <div className="flex justify-center lg:justify-end mt-2 lg:mt-16">
