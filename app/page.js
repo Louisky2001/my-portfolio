@@ -1080,51 +1080,58 @@ From securing infrastructure to supporting enterprise environments, I focus on p
       </section>
 
       <section className="mx-auto max-w-7xl px-6 pt-20 pb-8 lg:px-10">
-  <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-start">
+  <div className="grid gap-16 lg:grid-cols-[1.2fr_0.8fr] items-start">
 
     {/* LEFT SIDE — WHAT I DO */}
-document.getElementById("what-i-do").innerHTML = `
-<div class="what-i-do-section">
+    <div className="max-w-xl">
 
-  <h4 class="section-label">WHAT I DO</h4>
+      <h4 className="text-cyan-400 text-xs tracking-widest mb-3">
+        WHAT I DO
+      </h4>
 
-  <h2 class="section-title">
-    Security, Infrastructure, and Operational Support
-  </h2>
+      <h2 className="text-4xl font-bold leading-tight mb-6">
+        Security, Infrastructure, and Operational Support
+      </h2>
 
-  <p class="section-text">
-    I design and build intelligent security systems that detect, analyze, and respond to real-world cyber threats in real time. 
-    My work focuses on security operations, detection engineering, and practical system implementation, combining both user behavior analytics (UEBA) 
-    and system-level monitoring (EDR) to deliver proactive and automated security solutions.
-  </p>
+      <p className="text-slate-400 mb-6 leading-relaxed">
+        I design and build intelligent security systems that detect, analyze, and respond to real-world cyber threats in real time.
+        My work focuses on security operations, detection engineering, and practical system implementation, combining both user behavior analytics (UEBA)
+        and system-level monitoring (EDR) to deliver proactive and automated security solutions.
+      </p>
 
-  <ul class="what-i-do-list">
-    <li>Phishing detection and email threat analysis</li>
-    <li>Behavioral threat detection (UEBA-style user monitoring)</li>
-    <li>Malware behavior detection (EDR-style system monitoring)</li>
-    <li>Detection of credential dumping, privilege escalation, and ransomware activity</li>
-    <li>Anomaly-based detection for unknown (zero-day–style) threats</li>
-    <li>API security, prompt injection defense, and PII protection</li>
-    <li>AI-driven security systems with automated response (block, log, alert)</li>
-  </ul>
+      <ul className="space-y-3 mb-6">
+        {[
+          "Phishing detection and email threat analysis",
+          "Behavioral threat detection (UEBA-style user monitoring)",
+          "Malware behavior detection (EDR-style system monitoring)",
+          "Detection of credential dumping, privilege escalation, and ransomware activity",
+          "Anomaly-based detection for unknown (zero-day–style) threats",
+          "API security, prompt injection defense, and PII protection",
+          "AI-driven security systems with automated response (block, log, alert)",
+        ].map((item, index) => (
+          <li key={index} className="flex items-start text-slate-300">
+            <span className="text-cyan-400 mr-3">•</span>
+            {item}
+          </li>
+        ))}
+      </ul>
 
-  <p class="section-text">
-    I apply SOC-level investigation thinking with hands-on engineering to identify risks early, automate response, and strengthen system resilience. 
-    In addition, I support enterprise environments by optimizing infrastructure and ensuring systems remain secure, stable, and operational.
-  </p>
+      <p className="text-slate-400 leading-relaxed">
+        I apply SOC-level investigation thinking with hands-on engineering to identify risks early, automate response, and strengthen system resilience.
+        In addition, I support enterprise environments by optimizing infrastructure and ensuring systems remain secure, stable, and operational.
+      </p>
 
-</div>
-`;
+    </div>
 
     {/* RIGHT SIDE — SECURITY TOOL SNAPSHOT */}
-    <div className="flex justify-center lg:justify-end mt-2 lg:mt-16">
-      <div className="w-full max-w-[360px] rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur">
+    <div className="flex justify-center lg:justify-end">
+      <div className="w-full max-w-[360px] rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl shadow-xl">
 
-        <h3 className="mb-5 text-center text-xs tracking-widest text-cyan-400">
+        <h3 className="mb-6 text-center text-xs tracking-widest text-cyan-400">
           SECURITY TOOL SNAPSHOT
         </h3>
 
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3">
           {[
             "Qualys",
             "Nessus",
@@ -1137,26 +1144,20 @@ document.getElementById("what-i-do").innerHTML = `
           ].map((tool) => (
             <div
               key={tool}
-              className="flex items-center justify-center rounded-xl border border-white/10 bg-white/[0.02] px-2 py-3 text-xs text-slate-300 text-center"
+              className="flex items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] px-3 py-3 text-xs text-slate-300 text-center hover:bg-cyan-500/10 transition"
             >
               {tool}
             </div>
           ))}
         </div>
 
-       <p className="mt-8 text-center text-xs text-slate-400 leading-relaxed">
-  Experience across{" "}
-  <span className="text-cyan-200 font-medium">
-    security operations
-  </span>,{" "}
-  <span className="text-cyan-200 font-medium">
-    vulnerability assessment
-  </span>,{" "}
-  and{" "}
-  <span className="text-cyan-200 font-medium">
-    cloud security
-  </span>
-</p>
+        <p className="mt-8 text-center text-xs text-slate-400 leading-relaxed">
+          Experience across{" "}
+          <span className="text-cyan-200 font-medium">security operations</span>,{" "}
+          <span className="text-cyan-200 font-medium">vulnerability assessment</span>,{" "}
+          and{" "}
+          <span className="text-cyan-200 font-medium">cloud security</span>
+        </p>
 
       </div>
     </div>
