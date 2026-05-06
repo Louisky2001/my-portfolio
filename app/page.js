@@ -473,7 +473,7 @@ export default function LouisCybersecurityPortfolio() {
     "PII Masking",
     "SOC Simulation",
   ],
-  href: "https://github.com/Louisky2001/Ai-Security-System",
+  href: "/labs/Building-Security-AI-Systems.pdf",
    },
     {
       title: "OPSWAT MetaDefender Endpoint Security Lab",
@@ -1080,51 +1080,53 @@ From securing infrastructure to supporting enterprise environments, I focus on p
       </section>
 
       <section className="mx-auto max-w-7xl px-6 pt-20 pb-8 lg:px-10">
-  <div className="grid gap-16 lg:grid-cols-[1.2fr_0.8fr] items-start">
+  <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
 
     {/* LEFT SIDE — WHAT I DO */}
     <div className="max-w-xl">
 
-      <h4 className="text-cyan-400 text-xs tracking-widest mb-3">
-        WHAT I DO
-      </h4>
+<h4 className="text-cyan-400 text-base uppercase tracking-[0.35em] font-bold mb-5">
+  WHAT I DO
+</h4>
 
-      <h2 className="text-4xl font-bold leading-tight mb-6">
-        Security, Infrastructure, and Operational Support
-      </h2>
+<h2 className="text-3xl lg:text-4xl font-semibold leading-tight mb-6 bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
+  Security, Infrastructure, and Operational Support
+</h2>
 
       <p className="text-slate-400 mb-6 leading-relaxed">
-        I design and build intelligent security systems that detect, analyze, and respond to real-world cyber threats in real time.
-        My work focuses on security operations, detection engineering, and practical system implementation, combining both user behavior analytics (UEBA)
-        and system-level monitoring (EDR) to deliver proactive and automated security solutions.
+        I build intelligent security systems that detect, analyze, and respond to real-world cyber threats using UEBA and EDR principles. In addition, I support enterprise environments, optimize infrastructure, and ensure systems remain secure, stable, and operational.
       </p>
 
-      <ul className="space-y-3 mb-6">
-        {[
-          "Phishing detection and email threat analysis",
-          "Behavioral threat detection (UEBA-style user monitoring)",
-          "Malware behavior detection (EDR-style system monitoring)",
-          "Detection of credential dumping, privilege escalation, and ransomware activity",
-          "Anomaly-based detection for unknown (zero-day–style) threats",
-          "API security, prompt injection defense, and PII protection",
-          "AI-driven security systems with automated response (block, log, alert)",
-        ].map((item, index) => (
-          <li key={index} className="flex items-start text-slate-300">
-            <span className="text-cyan-400 mr-3">•</span>
-            {item}
-          </li>
-        ))}
-      </ul>
+ <ul className="space-y-4 mb-6">
+  {[
+    "Detection of credential dumping, privilege escalation, and ransomware activity",
+    "Malware behavior detection (EDR-style system monitoring)",
+    "Behavioral threat detection (UEBA-style user monitoring)",
+    "Phishing detection and email threat analysis",
+    "API security, prompt injection defense, and PII protection",
+    "Anomaly-based detection for unknown (zero-day–style) threats",
+    "AI-driven security systems with automated response (block, log, alert)",
+  ].map((item, index) => (
+    <li key={index} className="flex items-start text-slate-300 leading-relaxed">
+      
+      {/* 🔹 CUSTOM HOLLOW BULLET */}
+      <span className="mt-2 mr-3 w-3 h-3 rounded-full border border-cyan-400 shadow-[0_0_6px_rgba(34,211,238,0.5)] flex-shrink-0"></span>
+
+      {/* 🔹 TEXT */}
+      <span>{item}</span>
+
+    </li>
+  ))}
+</ul>
 
       <p className="text-slate-400 leading-relaxed">
-        I apply SOC-level investigation thinking with hands-on engineering to identify risks early, automate response, and strengthen system resilience.
-        In addition, I support enterprise environments by optimizing infrastructure and ensuring systems remain secure, stable, and operational.
+        I apply SOC-level thinking with hands-on engineering to detect risks early, automate response, and strengthen system resilience—while keeping enterprise systems secure, stable, and optimized.
       </p>
 
     </div>
 
     {/* RIGHT SIDE — SECURITY TOOL SNAPSHOT */}
-    <div className="flex justify-center lg:justify-end">
+    <div className="flex items-center justify-center lg:justify-end h-full">
       <div className="w-full max-w-[360px] rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl shadow-xl">
 
         <h3 className="mb-6 text-center text-xs tracking-widest text-cyan-400">
