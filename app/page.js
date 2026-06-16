@@ -998,7 +998,7 @@ From securing infrastructure to supporting enterprise environments, I focus on p
                   href="mailto:Louistinteds2001@yahoo.com"
                   className="inline-flex items-center gap-2 transition hover:text-cyan-200"
                 >
-                  <Mail size={16} /> Louistinteds2001@yahoo.com
+                  <Mail size={16} /> louis.okperiruisi@yahoo.com
                 </a>
                 <a
                   href="https://www.linkedin.com/in/louis-okperiruisi"
