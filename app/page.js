@@ -58,7 +58,7 @@ export default function LouisCybersecurityPortfolio() {
       title: "Industrial Field Support",
       description:
         "Delivered field technical support, infrastructure maintenance, and equipment troubleshooting across active industrial environments.",
-    },f
+    },
     {
       src: "/images/office-work.jpeg",
       alt: "Louis Okperiruisi working at a desk during enterprise IT operations and system monitoring",
