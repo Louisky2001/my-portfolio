@@ -58,7 +58,7 @@ export default function LouisCybersecurityPortfolio() {
       title: "Industrial Field Support",
       description:
         "Delivered field technical support, infrastructure maintenance, and equipment troubleshooting across active industrial environments.",
-    },
+    },f
     {
       src: "/images/office-work.jpeg",
       alt: "Louis Okperiruisi working at a desk during enterprise IT operations and system monitoring",
@@ -1874,7 +1874,7 @@ Technologies used to monitor threats, assess vulnerabilities, secure endpoints, 
       },
       {
         label: "SECURITY ENGINEERING",
-        role: "Cybersecurity Engineer / Analyst",
+        role: "Cybersecurity Engineer / Analyst (Internship - Remote)",
         company: "Hagital Consulting, Nigeria",
         period: "Jan 2025 – April 2026",
         highlight: "Vulnerability assessment & API security",
